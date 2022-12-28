@@ -25,3 +25,13 @@ function drop(ev) {
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data).cloneNode(true));
 }
+
+function resetBoard() {
+    const response = confirm("Are you sure you want to reset?")
+    if (response === true) {
+        location.reload();
+        return true;
+    } else {
+        alert("Resuming your game now.")
+    }
+}

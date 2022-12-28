@@ -13,7 +13,7 @@ body {
 }
 
 .box {
-    background: #ffffff;
+    background-color: rgb(54, 53, 53);;
     border: 1px solid #000000;
     display: flex;
     align-items: center;
@@ -22,17 +22,28 @@ body {
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-    position: relative;
     right: 186px;
     top: 120px;
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-    position: relative;
     right: 10px;
     top: 54px;
+}
+
+p,
+h1 
+{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    color: #ffffff;
+}
+
+.reset {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 30px;
+    margin: 4px 2px;
+    height: 40px;
+    cursor: pointer;
 }
