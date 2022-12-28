@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tic-Tac-Toe</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body style="background: #000000;">
+    <h1>Tic-Tac-Toe</h1>
+    <p>
+        <b>INSTRUCTIONS:</b><br>
+        <small>___________________</small><br>
+        <small> </small><br>
+        1. The game is played on a grid that's 3 squares by 3 squares.<br>
+        <small> </small><br>
+        2. You are <b style="color: red;">X</b>, your friend (or other player playing with you) is
+        <b style="color: red;">O</b>. Players take turns putting their marks in
+        empty squares.<br>
+        <small> </small><br>
+        3. The first player to get 3 of their marks in a row (up, down, across, or diagonally) is the winner.<br>
+        <small> </small><br>
+        4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.<br>
+    </p>
+
+    <div class="game-board">
+        <div ondrop="drop(event)" ondragover="allowDrop(event)" class="box"></div>
+        <div ondrop="drop(event)" ondragover="allowDrop(event)" class="box"></div>
+        <div ondrop="drop(event)" ondragover="allowDrop(event)" class="box"></div>
+        <div ondrop="drop(event)" ondragover="allowDrop(event)" class="box"></div>
+        <div ondrop="drop(event)" ondragover="allowDrop(event)" class="box"></div>
+        <div ondrop="drop(event)" ondragover="allowDrop(event)" class="box"></div>
+        <div ondrop="drop(event)" ondragover="allowDrop(event)" class="box"></div>
+        <div ondrop="drop(event)" ondragover="allowDrop(event)" class="box"></div>
+        <div ondrop="drop(event)" ondragover="allowDrop(event)" class="box"></div>
+    </div>
+
+    <div class="game-board">
+
+        <div class="box" ondrop="drop(event)">
+            <img src="O.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+        </div>
+        <div class="box" ondrop="drop(event)">
+            <img src="X.png" draggable="true" ondragstart="drag(event)" id="drag2" width="88" height="31">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

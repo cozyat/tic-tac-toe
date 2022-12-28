@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.game-board {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+    border: 1px solid #000000;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    background: #ffffff;
+    border: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AAA;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    position: relative;
+    right: 186px;
+    top: 120px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    position: relative;
+    right: 10px;
+    top: 54px;
+}
